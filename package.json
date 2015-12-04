@@ -1,0 +1,37 @@
+{
+  "name": "@npm/npmo-auth-sso",
+  "version": "1.0.0",
+  "description": "auth strategy for SSO (SAML, OAuth).",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "standard",
+    "test": "tap --timeout=5000 --coverage ./test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/npm/npmo-auth-sso.git"
+  },
+  "keywords": [
+    "sso",
+    "npmo",
+    "npm",
+    "auth",
+    "strategy"
+  ],
+  "author": "Ben Coe <ben@npmjs.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npm/npmo-auth-sso/issues"
+  },
+  "homepage": "https://github.com/npm/npmo-auth-sso#readme",
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "redis": "^2.1.0",
+    "saml2-js": "^1.2.0",
+    "uuid": "^2.0.1"
+  },
+  "devDependencies": {
+    "standard": "^5.3.1",
+    "tap": "^2.0.0"
+  }
+}
