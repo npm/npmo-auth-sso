@@ -21,6 +21,7 @@ tap.test('it should return an error containing a login URL if no session exists 
 
   session.get(sessionLookupKey, function (err, user) {
     session.end()
+    t.equal(err.statusCode, 401)
     t.ok(err.message.indexOf('https://npmo.onelogin.com') !== -1)
     t.done()
   })
