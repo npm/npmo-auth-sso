@@ -22,6 +22,7 @@ tap.test('it generates a token and returns a session on login', function (t) {
     t.assert(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/.test(s.token))
     t.equal(s.user.name, 'foo')
     t.equal(s.user.email, 'ben@example.com')
+    t.assert(/https:\/\/npmo\.onelogin\.com/.test(s.user.sso))
     t.equal(err, null)
     t.end()
   })
