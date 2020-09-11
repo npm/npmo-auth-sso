@@ -27,7 +27,7 @@
   "dependencies": {
     "lodash": "^3.10.1",
     "redis": "^2.1.0",
-    "saml2-js": "^1.2.0",
+    "saml2-js": "^2.0.5",
     "uuid": "^2.0.1"
   },
   "devDependencies": {
